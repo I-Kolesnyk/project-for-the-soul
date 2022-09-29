@@ -53,5 +53,11 @@
 <symbol id="icon-tik-tok" viewBox="0 0 29 32">
 <path fill="#fff" style="fill: var(--color20, #fff)" d="M28.627 12.947c-0.274 0.025-0.548 0.039-0.823 0.040-1.483 0-2.943-0.353-4.248-1.027s-2.413-1.649-3.226-2.836v13.154c0 1.923-0.596 3.803-1.713 5.401s-2.705 2.845-4.562 3.581c-1.857 0.736-3.901 0.928-5.873 0.553s-3.783-1.301-5.205-2.661c-1.422-1.36-2.39-3.092-2.782-4.978s-0.191-3.841 0.578-5.617c0.769-1.777 2.072-3.295 3.744-4.363s3.637-1.639 5.648-1.639c0.212 0 0.42 0.018 0.628 0.031v4.791c-0.209-0.024-0.414-0.060-0.628-0.060-1.376 0-2.696 0.523-3.669 1.453s-1.52 2.193-1.52 3.509c0 1.316 0.547 2.578 1.52 3.509s2.293 1.453 3.669 1.453c2.866 0 5.397-2.16 5.397-4.9l0.050-22.341h4.792c0.219 1.992 1.163 3.846 2.667 5.239s3.472 2.237 5.56 2.383v5.325z"></path>
 </symbol>
+<symbol id="icon-Vector1" viewBox="0 0 57 32">
+<path fill="none" stroke="#4a4a4a" stroke-width="5.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #4a4a4a)" d="M3.556 28.444l24.889-24.889 24.889 24.889"></path>
+</symbol>
+<symbol id="icon-Vector2" viewBox="0 0 57 32">
+<path fill="none" stroke="#4a4a4a" stroke-width="5.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #4a4a4a)" d="M53.333 3.556l-24.889 24.889-24.889-24.889"></path>
+</symbol>
 </defs>
 </svg>
