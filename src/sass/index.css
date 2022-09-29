@@ -1,0 +1,107 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --primary-background-color: #ffffff;
+  --secondary-background-color-dark: #161616;
+  --secondary-background-color-light: #f4fafd;
+  --accent-color: #289bde;
+  --star-color: #fbbf24;
+  --comas-color: #d2d2d2;
+  --logo-icon-background-color: #242424;
+  --primary-text-color: #777777;
+  --secondary-text-color: #f4f4f4;
+  --footer-text-color: #e8e8e8;
+  --title-text-color: #1d1d1d;
+  --subtitle-text-color: #4a4a4a;
+  --white-text-color: #ffffff;
+  --logo-text-color: #4a4a4a;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: "Poppins", san-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 834px) {
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 834px) {
+  .container {
+    width: 834px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+}/*# sourceMappingURL=index.css.map */
