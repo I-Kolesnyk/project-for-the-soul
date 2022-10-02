@@ -1,21 +1,28 @@
-.join__box{
+.join__box {
    background-color: var(--accent-color);
    border-radius: 5px;
    text-align: center;
    padding: 30px 15px;
 }
-.join__text-top{
+.join__text-box {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.join__text-top {
    @include font(600, 18, 27);
    line-height: calc(27 / 18);
    color: var(--white-text-color);
    text-align: center;
 }
 
-.join__text{
+.join__text {
    @include font(400, 14, 24);
    line-height: calc(24 / 14);
    color: var(--white-text-color);
    text-align: center;
+   align-self: center;
+   max-width: 305px;
 }
 
 .join__button {
@@ -27,7 +34,8 @@
    background: var(--primary-background-color);
    border: 1px solid var(--primary-background-color);
    border-radius: 5px;
-   
+   margin-top: 16px;
+
    // @media screen and (min-width: 835px) and (max-width: 1599px) {
    //    @include font(600, 18, 27);
    //    line-height: calc(27 / 18);
@@ -40,4 +48,3 @@
    //    padding: 13px 33px;
    // }
 }
-
