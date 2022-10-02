@@ -1,0 +1,140 @@
+@media screen and (min-width: 834px) {
+   .elearning__box {
+      display: flex;
+   }
+}
+
+.elearning__content {
+   background-color: var(--secondary-background-color-light);
+   padding: 20px 25px 20px 20px;
+ 
+   @media screen and (min-width: 834px) and (max-width: 1599px) {
+      display: flex;
+      flex-direction: column;
+      padding: 45px 45px 45px 35px;
+   }
+   @media screen and (min-width: 1600px) {
+      padding: 130px 64px 130px 50px;
+   }
+}
+
+.elearning__img-box {
+   max-width: 334px;
+ 
+   @media screen and (min-width: 1600px) {
+      max-width: 600px;
+   }
+}
+
+.elearning__titel {
+   @include font(600, 20, 30);
+   line-height: calc(30 / 20);
+   color: var(--title-text-color);
+   text-transform: capitalize;
+   max-width: 289px;
+   margin-bottom: 16px;
+  
+   @media screen and (min-width: 835px) and (max-width: 1599px) {
+      @include font(600, 30, 45);
+      line-height: calc(45 / 30);
+      margin-bottom: 10px;
+      max-width: 320px;
+   }
+  
+   @media screen and (min-width: 1600px) {
+      @include font(600, 45, 60);
+      line-height: calc(60 / 45);
+      margin-bottom: 10px;
+      max-width: 549px;
+   }
+}
+
+.elearning__text {
+   @include font(400, 14, 21);
+   line-height: calc(21 / 14);
+  
+   @media screen and (min-width: 835px) and (max-width: 1599px) {
+      @include font(400, 16, 26);
+      line-height: calc(26 / 16);
+   }
+  
+   @media screen and (min-width: 1600px) {
+      @include font(400, 16, 30);
+      line-height: calc(30 / 16);
+   }
+}
+.elearning__text-spoiler-link {
+   font-family: inherit;
+   color: var(--accent-color);
+  
+   @media screen and (min-width: 1600px) {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 1599px) {
+   .elearning__text-spoiler {
+      display: none;
+   }
+}
+
+.elearning__list {
+   margin-bottom: 16px;
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 27px;
+   row-gap: 16px;
+   padding: 0;
+   @media screen and (min-width: 835px) and (max-width: 1600px) {
+      column-gap: 32px;
+      row-gap: 10px;
+      margin-bottom: 20px;
+   }
+  
+   @media screen and (min-width: 1600px) {
+      column-gap: 49px;
+      margin-bottom: 30px;
+   }
+}
+.elearning__text-item {
+   @include font(600, 25, 38);
+   line-height: calc(38 / 25);
+   color: var(--title-text-color);
+   
+   @media screen and (min-width: 1600px) {
+      @include font(600, 45, 60);
+      line-height: calc(60 / 45);
+   }
+}
+.elearning__text-name {
+   @include font(500, 16, 24);
+   line-height: calc(24 / 16);
+   color: var(--primary-text-color);
+  
+   @media screen and (min-width: 1600px) {
+      @include font(500, 20, 30);
+      line-height: calc(30 / 20);
+   }
+}
+.elearning__button {
+   @include font(600, 16, 24);
+   line-height: calc(24 / 16);
+   text-align: center;
+   color: var(--white-text-color);
+   padding: 7px 18px;
+   background: var(--accent-color);
+   border: 1px solid var(--accent-color);
+   border-radius: 5px;
+   
+   @media screen and (min-width: 835px) and (max-width: 1599px) {
+      @include font(600, 18, 27);
+      line-height: calc(27 / 18);
+      padding: 11px 18px;
+      align-self: flex-start;
+   }
+   @media screen and (min-width: 1600px) {
+      @include font(600, 20, 30);
+      line-height: calc(30 / 20);
+      padding: 13px 33px;
+   }
+}
