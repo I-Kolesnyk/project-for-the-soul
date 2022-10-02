@@ -7,13 +7,16 @@
 .join__text-box {
    display: flex;
    flex-direction: column;
+   justify-content: center;
    gap: 10px;
 }
 .join__text-top {
+   display: inline;
    @include font(600, 18, 27);
    line-height: calc(27 / 18);
    color: var(--white-text-color);
    text-align: center;
+   max-width: fit-content;
 }
 
 .join__text {
@@ -35,16 +38,4 @@
    border: 1px solid var(--primary-background-color);
    border-radius: 5px;
    margin-top: 16px;
-
-   // @media screen and (min-width: 835px) and (max-width: 1599px) {
-   //    @include font(600, 18, 27);
-   //    line-height: calc(27 / 18);
-   //    padding: 11px 18px;
-   //    align-self: flex-start;
-   // }
-   // @media screen and (min-width: 1600px) {
-   //    @include font(600, 20, 30);
-   //    line-height: calc(30 / 20);
-   //    padding: 13px 33px;
-   // }
 }
