@@ -1,0 +1,112 @@
+.footer {
+  background-color: var(--secondary-background-color-dark);
+}
+.address {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.address__link {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--footer-text-color);
+  @media screen and (max-width: 833px) {
+    @include font(400, 14px, 28px);
+  }
+  @media screen and (min-width: $tablet) {
+    width: 321px;
+    margin-bottom: 10px;
+    @include font(400, 16px, 28px);
+  }
+}
+.footer__text-wrapper {
+  @include flex();
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.footer__text {
+  color: var(--footer-text-color);
+  @media screen and (max-width: 833px) {
+    @include font(400, 14px, 18px);
+  }
+  @media screen and (min-width: $tablet) {
+    @include font(400, 15px, 19px);
+  }
+}
+.footer__policy {
+  &::after {
+    content: '';
+    width: 0px;
+    height: 14px;
+    margin-left: 10px;
+    border-right: 1px solid var(--footer-text-color);
+  }
+}
+.footer__list {
+  @include flex();
+  gap: 12px;
+  @media screen and (min-width: $tablet) {
+    gap: 15px;
+  }
+}
+.footer__link {
+  @include flex();
+  background-color: var(--logo-icon-background-color);
+  fill: var(--white-text-color);
+  border-radius: 50%;
+  transition: background-color 250ms linear;
+  @media screen and (max-width: 833px) {
+    width: 30px;
+    height: 30px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.footer__social-icon--facebook {
+  @media screen and (max-width: 833px) {
+    width: 8px;
+    height: 17px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 11px;
+    height: 23px;
+  }
+}
+.footer__social-icon--twitter {
+  @media screen and (max-width: 833px) {
+    width: 16px;
+    height: 14px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 22px;
+    height: 19px;
+  }
+}
+.footer__social-icon--linkedin {
+  @media screen and (max-width: 833px) {
+    width: 14px;
+    height: 14px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 19px;
+    height: 19px;
+  }
+}
+.footer__social-icon--tik-tok {
+  @media screen and (max-width: 833px) {
+    width: 13px;
+    height: 14px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 17px;
+    height: 19px;
+  }
+}

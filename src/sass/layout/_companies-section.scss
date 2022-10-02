@@ -1,3 +1,8 @@
+@media screen and (max-width: 1600px) {
+  .companies {
+    display: none;
+  }
+}
 @media screen and (min-width: $desktop) {
   .companies__title {
     margin-bottom: 30px;
