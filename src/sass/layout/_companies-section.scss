@@ -1,0 +1,12 @@
+@media screen and (min-width: $desktop) {
+  .companies__title {
+    margin-bottom: 30px;
+    @include font(600, 45px, 60px);
+    text-align: center;
+    color: var(--title-text-color);
+  }
+  .companies__list {
+    @include flex();
+    gap: 75px;
+  }
+}
