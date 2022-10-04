@@ -1,0 +1,228 @@
+.feedback__titel {
+   text-align: center;
+   text-transform: capitalize;
+   color: var(--title-text-color);
+   @media screen and (max-width: $tablet) {
+      @include font(600, 20, 30);
+      max-width: 222px;
+      margin: 0 auto;
+      margin-bottom: 8px;
+   }
+   @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      @include font(600, 30, 45);
+      margin-bottom: 8px;
+   }
+   @media screen and (min-width: $desktop) {
+      @include font(600, 45, 60);
+      margin-bottom: 20px;
+   }
+}
+
+.feedback__top-text {
+   text-align: center;
+   @media screen and (max-width: $tablet) {
+      @include font(400, 14, 21);
+      max-width: 305px;
+      margin: 0 auto;
+      margin-bottom: 16px;
+   }
+   @media screen and (min-width: $tablet) {
+      @include font(400, 16, 30);
+      margin-bottom: 30px;
+      max-width: 606px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+   }
+   @media screen and (min-width: $desktop) {
+      margin: 0 auto;
+      margin-bottom: 50px;
+      max-width: 606px;
+   }
+}
+.feedback__list {
+   display: flex;
+
+   @media screen and (max-width: $tablet) {
+      gap: 16px;
+      flex-direction: column;
+   }
+   @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      gap: 20px;
+      flex-direction: column;
+   }
+   @media screen and (min-width: $desktop) {
+      gap: 14px;
+   }
+}
+
+.feedback__item {
+   position: relative;
+   border: 1px solid #e8e8e8;
+   border-radius: 5px;
+   @media screen and (max-width: $tablet) {
+      padding: 20px 38px 20px 20px;
+   }
+   @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      padding: 40px 49px 40px 38px;
+   }
+   @media screen and (min-width: $desktop) {
+      padding: 40px 37px 40px 40px;
+   }
+}
+
+.feedback__icon-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   @media screen and (max-width: $desktop) {
+      margin-bottom: 10px;
+   }
+   @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+   }
+}
+
+.feedback__text {
+   @media screen and (max-width: $tablet) {
+      @include font(400, 14, 21);
+      max-width: 280px;
+   }
+   @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      @include font(400, 16, 30);
+      max-width: 645px;
+   }
+   @media screen and (min-width: $desktop) {
+      @include font(400, 16, 30);
+      max-width: 568px;
+   }
+}
+
+.feedback__content {
+   display: flex;
+   align-items: center;
+   gap: 19px;
+}
+
+.feedback__content-icon-left {
+   cursor: pointer;
+   @include flex;
+   position: absolute;
+   z-index: 100;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translate(-50%, -50%);
+   width: 47px;
+   height: 47px;
+   padding: 8px;
+   border-radius: 50%;
+   fill: var(--icon-background-color);
+   stroke: var(--accent-color);
+   background-color: var(--icon-background-color);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover {
+      background-color: var(--accent-color);
+      fill: var(--accent-color);
+      stroke: var(--white-text-color);
+   }
+}
+.feedback__content-icon-right {
+   cursor: pointer;
+   @include flex;
+   position: absolute;
+   z-index: 100;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translate(50%, -50%);
+   width: 47px;
+   height: 47px;
+   padding: 8px;
+   border-radius: 50%;
+   fill: var(--icon-background-color);
+   stroke: var(--accent-color);
+   background-color: var(--icon-background-color);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover {
+      background-color: var(--accent-color);
+      fill: var(--accent-color);
+      stroke: var(--white-text-color);
+   }
+}
+
+.feedback__content-icon-left,
+.feedback__content-icon-right {
+   @media screen and (max-width: $desktop) {
+      display: none;
+   }
+}
+
+.feedback__content-top {
+   @media screen and (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: 15px;
+   }
+   @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+   }
+}
+
+.feedback__content-box {
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+}
+
+.feedback__content-name {
+   color: var(--subtitle-text-color);
+   @media screen and (max-width: $tablet) {
+      @include font(600, 18, 27);
+   }
+   @media screen and (min-width: $tablet) {
+      @include font(600, 18, 27);
+   }
+}
+.feedback__content-position {
+   @include font(400, 16, 24);
+}
+
+.feedback__button-box {
+   text-align: center;
+
+   @media screen and (max-width: $tablet) {
+      margin-top: 24px;
+   }
+
+   @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      margin-top: 41px;
+   }
+
+   @media screen and (min-width: $desktop) {
+      display: none;
+   }
+}
+
+.feedback__button {
+   cursor: pointer;
+   text-transform: capitalize;
+   text-align: center;
+   color: var(--white-text-color);
+   background: var(--accent-color);
+   border: 1px solid var(--accent-color);
+   border-radius: 5px;
+   @media screen and (max-width: $desktop) {
+      @include font(600, 18, 27);
+      padding: 10px 18px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+         color: var(--accent-color);
+         background-color: var(--white-text-color);
+         transform: scale(1.1);
+      }
+   }
+}
