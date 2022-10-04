@@ -1,0 +1,98 @@
+.join__box {
+   @include flex;
+   background-color: var(--accent-color);
+   border-radius: 5px;
+   flex-direction: column;
+
+   @media screen and (max-width: $tablet) {
+      max-width: 335px;
+      padding: 30px 15px;
+   }
+
+   @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      padding: 58px 102px;
+      max-width: 734px;
+   }
+   @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1320px;
+      padding: 80px 115px 80px 99px;
+   }
+}
+
+.join__text-box {
+   @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 528px;
+      align-items: flex-start;
+   }
+}
+
+.join__text-top {
+   text-align: center;
+   color: var(--white-text-color);
+   @media screen and (max-width: $tablet) {
+      @include font(600, 18, 27);
+      margin-bottom: 10px;
+   }
+
+   @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      @include font(600, 30, 45);
+      margin-bottom: 10px;
+   }
+   @media screen and (min-width: $desktop) {
+      @include font(600, 45, 60);
+   }
+}
+
+.join__text {
+   text-align: center;
+   color: var(--white-text-color);
+   @media screen and (max-width: $tablet) {
+      @include font(400, 14, 24);
+      margin-bottom: 16px;
+   }
+
+   @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      @include font(400, 16, 30);
+      text-align: center;
+      margin-bottom: 20px;
+   }
+   @media screen and (min-width: $desktop) {
+      @include font(400, 16, 30);
+      text-align: start;
+   }
+}
+
+.join__button {
+   cursor: pointer;
+   text-align: center;
+   color: var(--accent-color);
+   background: var(--white-text-color);
+   border: 1px solid var(--white-text-color);
+   border-radius: 5px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover {
+      color: var(--white-text-color);
+      background-color: var(--accent-color);
+      transform: scale(1.1);
+   }
+   @media screen and (max-width: $tablet) {
+      @include font(600, 16, 24);
+      padding: 6px 18px;
+   }
+
+   @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      @include font(600, 18, 27);
+      text-align: center;
+      padding: 10px 18px;
+   }
+   @media screen and (min-width: $desktop) {
+      @include font(600, 20, 30);
+      padding: 13px 33px;
+   }
+}
